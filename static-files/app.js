@@ -40,6 +40,7 @@ app.post('/newform', (req, res) => {
 app.get('*', (req, res) => {
   console.log('404 Page Not Found');
   res.send("This is not the page you are looking for!");
+  // Can also replace with a 404 page not found!;
 })
 
 
