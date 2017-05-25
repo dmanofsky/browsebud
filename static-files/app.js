@@ -35,6 +35,11 @@ app.post('/newform', (req, res) => {
   console.log('Post Success!');
   console.log('Grabbed ----> ' + req.body.name);
   res.render('newform');
+});
+
+app.get('*', (req, res) => {
+  console.log('404 Page Not Found');
+  res.send("This is not the page you are looking for!");
 })
 
 
