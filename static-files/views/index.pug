@@ -6,3 +6,7 @@ html(lang="en")
     link(rel="stylesheet", href="/static/main.css")
   body
     p This is a static file serving example.
+    form(method='POST' action='/newform')
+      div.form-group
+        label(for='name') Website:
+        input#name.form-control(type='text', placeholder='Website to rate here' name='name')

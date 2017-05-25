@@ -18,15 +18,25 @@
 
 const express = require('express');
 const app = express();
+var bodyParser = require('body-parser');
 
 app.set('view engine', 'pug');
 
 // Use the built-in express middleware for serving static files from './public'
 app.use('/static', express.static('public'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', (req, res) => {
   res.render('index');
 });
+
+app.post('/newform', (req, res) => {
+  console.log('Post Success!');
+  console.log('Grabbed ----> ' + req.body.name);
+  res.render('newform');
+})
+
 
 // Start the server
 const PORT = process.env.PORT || 8080;
