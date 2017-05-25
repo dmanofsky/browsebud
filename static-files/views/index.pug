@@ -3,25 +3,23 @@ html(lang='en')
   // include the head file
   include includes/head.pug
 
-  body.font
-    div.stage
-      //include the header menu file
-      include includes/header.pug
+  body
+  //include the header menu file
+  include includes/header.pug
 
-      div(id='container' class='clearfix')
-        div(class='container container-pod shorten-container')
-          h1(class='page-title t-center') WE RATE LINKS SO YOU DON'T HAVE TO.
-          div(class='join-bitly t-center') Get content ratings for your favorite sites.
-          div(id='form_container' class='t-center mid-container foot-room')
-            form(method='POST' action='/newform' name='rateUrl' id='unAuthRateForm')
-              fieldset(class='cf')
-                input(id='rate_url' taborder='1' name='url' type='text' class='shorten-input' placeholder='Paste a link to see its rating' value='' autocomplete='off' autocorrect='off' autocapitalize='off')
-                input(id='rate_btn' type='submit' class='button button-primary button-larg rate-button' value='Rate It')
-                //label(for='name') Website:
-                //input#name.form-control(type='text', placeholder='Website to rate here' name='name')
-              div(id='rate_actions')
-            div(class='signup=leanr-more t-center')
-              a(id='top=signup-cta' class='header-login' href='https://browsebud.appspot.com/') Sign Up For Free
-              a(id='top-learn-more-cta' href='https://browsebud.appspot.com/' class='learn-more') or Learn more #{'>'}
+  div(class='module0')
+    h1(class='module0-title') WE RATE LINKS SO YOU DON'T HAVE TO.
+    div(class='module-sub-title') Get content ratings for your favorite sites.
+    div(id='form_container' class='t-center mid-container foot-room')
+      form(method='POST' action='/newform' name='rateUrl' id='unAuthRateForm')
+        fieldset(class='cf')
+          input(id='rate_url' taborder='1' name='url' type='text' class='shorten-input' placeholder='Paste a link to see its rating' value='' autocomplete='off' autocorrect='off' autocapitalize='off')
+          input(id='rate_btn' type='submit' class='button button-primary button-larg rate-button' value='Get Rating')
+          //label(for='name') Website:
+          //input#name.form-control(type='text', placeholder='Website to rate here' name='name')
+        div(id='rate_actions')
+      div(class='signup=leanr-more t-center')
+        a(id='top=signup-cta' class='header-login' href='https://browsebud.appspot.com/') Sign Up For Free
+        a(id='top-learn-more-cta' href='https://browsebud.appspot.com/' class='learn-more') or Learn more #{'>'}
 
-    include includes/footer.pug
+  include includes/footer.pug

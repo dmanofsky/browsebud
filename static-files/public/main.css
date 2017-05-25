@@ -14,8 +14,88 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 /* [START example] */
+/* font family notes
+font-family: 'Pacifico', cursive;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+/*
+* {
+  border: 1px solid rgba(0,0,0,0.3);
+}
+*/
+
 body {
-  font-family: Verdana, Helvetica, sans-serif;
-  background-color: #CCCCFF;
+  background-image: url("macbook-table.jpeg");
+  background-repeat: repeat;
+  overflow: hidden;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+  color: #FFFFFF;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  float: center;
+  max-width: 1024px;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  float: center;
+  max-width: 1024px;
+}
+
+nav ul{
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3914AF;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  vertical-align: bottom;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover:not(.active) {
+    background-color: #735AC3;
+}
+
+.active {
+    background-color: #735AC3;
+}
+
+nav ul li a:hover {
+    background-color: #735AC3;
+}
+
+.big-sans {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 24px;
+}
+.big-cursive {
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
 }
 /* [END example] */
