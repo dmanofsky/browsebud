@@ -15,11 +15,10 @@ html(lang='en')
         fieldset(class='cf')
           input(id='rate_url' taborder='1' name='url' type='text' class='shorten-input' placeholder='Paste a link to see its rating' value='' autocomplete='off' autocorrect='off' autocapitalize='off')
           input(id='rate_btn' type='submit' class='button button-primary button-larg rate-button' value='Get Rating')
-          //label(for='name') Website:
-          //input#name.form-control(type='text', placeholder='Website to rate here' name='name')
+          //Fixed input bug ---> Bodyparser takes the "name" 
         div(id='rate_actions')
       div(class='signup=leanr-more t-center')
         a(id='top=signup-cta' class='header-login' href='https://browsebud.appspot.com/') Sign Up For Free
-        a(id='top-learn-more-cta' href='https://browsebud.appspot.com/' class='learn-more')     or Learn more #{'>'}
+        a(id='top-learn-more-cta' href='https://browsebud.appspot.com/' class='learn-more') or Learn more #{'>'}
 
   include includes/footer.pug

@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
 
 app.post('/newform', (req, res) => {
   console.log('Post Success!');
-  console.log('Grabbed ----> ' + req.body.name);
+  console.log('Grabbed ----> ' + req.body.url);
   res.render('newform');
 });
 
