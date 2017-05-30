@@ -28,6 +28,7 @@ font-family: 'Roboto Condensed', sans-serif;
 * {
 
 }
+
 body {
   margin: 0px;
   background: url(./macbook-table.jpeg) no-repeat center center;
@@ -39,6 +40,10 @@ body {
   margin: 0px;
 }
 
+/*
++++++++++++++header++++++++++++++++
+*/
+
 header {
   margin: 0px;
   z-index: 999;
@@ -46,7 +51,8 @@ header {
   top: 0px;
   width: 100%;
   height: 60px;
-
+  //background: #D1B31D; //yellow
+  //background: #2C1475; //purple
 }
 
 #header-inner {
@@ -163,7 +169,7 @@ nav {
 }
 
 /*
-++++++++++++++++++++++++++++++++++++
+++++++++++++++++module0++++++++++++++++++++
 */
 
 #module0 {
@@ -171,7 +177,7 @@ nav {
   z-index: 0;
   top: 0px;
   width: 100%;
-  height: 1000px;
+  height: 600px;
   background-color: rgba(44, 20, 117, 0.78);
 }
 
@@ -188,7 +194,7 @@ h1 {
 
 h2 {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 32px;
+  font-size: 24px;
 }
 
 .module0-sub-title {
@@ -209,14 +215,92 @@ fieldset {
 }
 
 #rate-url {
-  font-size: 16px;
-  height: 25px;
+  vertical-align: middle;
+  font-size: 15px;
+  padding: 1.4em 1.4em 1.4em 1.4em;
   width: 600px;
-  border-style: inset;
+  border-style: none;
   border-color: white;
   border-radius: 0.4em;
   margin: auto;
-  padding: 1em 1em 1em 1em;
+}
+
+#rate-btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
+    margin: .8em;
+    padding: 1.4em 1.4em 1.4em 1.4em;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 0.4em;
+    color: #fff;
+    text-rendering: optimizelegibility;
+    border: 0 !important;
+    background: #D1B31D;
+}
+
+#rate-btn:hover {
+  background: #AA900B;
+}
+
+#sign-up-block {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 15px;
+  margin: 1em;
+}
+
+#sign-up-button {
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  padding: 1em;
+  margin: 2em;
+  text-align: center;
+  color: white;
+  border-style: solid;
+  border-width: 0.2em;
+  border-color: white;
+  border-radius: 0.3em;
+  //background-color: white;
+}
+
+#sign-up-button:hover {
+  //color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#top-learn-more {
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  padding: 1em;
+  margin: 2em;
+  text-align: center;
+  color: white;
+  border-style: solid;
+  border-width: 0.2em;
+  border-color: white;
+  border-radius: 0.3em;
+  //background-color: white;
+}
+
+#top-learn-more:hover {
+  //color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*
+++++++++++++++++footer++++++++++++++++++++
+*/
+
+footer {
+  z-index: 0;
+  position: relative;
+  width: 100%;
+  border: solid;
+  border-width: 3px;
 }
 
 
