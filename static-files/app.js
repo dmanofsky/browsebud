@@ -35,7 +35,7 @@ app.post('/newform', (req, res) => {
   console.log('Post Success!');
   console.log('Grabbed ----> ' + req.body.url);
   var LS = require('./linkSave.js');
-  LS.addLink('empty');
+  LS.addLink(req.body.url);
   res.render('newform');
 });
 
