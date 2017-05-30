@@ -9,17 +9,17 @@ html
       include includes/header.pug
 
       div(id='module0')
-        h1(class='module0-title') WE RATE WEBSITES FOR YOUR PROTECTION.
+        h1(class='module0-title') WE RATE WEB CONTENT FOR AGE APPROPRIATENESS.
         h2(class='module0-sub-title') Get content ratings for your favorite sites.
         div(id='form-container')
           form(method='POST' action='/newform' name='rateUrl' id='unAuthRateForm')
             fieldset(class='cf')
-              input(id='rate-url' taborder='1' name='url' type='text' class='rate-input' placeholder='Paste a link to view its rating' value='' autocomplete='off' autocorrect='off' autocapitalize='off')
+              input(id='rate-url' taborder='1' name='url' type='text' class='rate-input' placeholder='Paste a link to calculate its rating' value='' autocomplete='off' autocorrect='off' autocapitalize='off')
               input(id='rate-btn' type='submit' class='button' value='Get Rating')
               //Fixed input bug - Bodyparser takes the name
             div(id='rate_actions')
           div(id='sign-up-block')
-            a(id='sign-up-button' href='https://browsebud.appspot.com/') SIGN UP FOR FREE
-            a(id='top-learn-more-cta' href='https://browsebud.appspot.com/' class='learn-more') or Learn More #{'>'}
+            a(id='sign-up-button' href='https://browsebud.appspot.com/') Sign Up For Free
+            a(id='top-learn-more' href='https://browsebud.appspot.com/' class='learn-more') or Learn More #{'>'}
 
       include includes/footer.pug
