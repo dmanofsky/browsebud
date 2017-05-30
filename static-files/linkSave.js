@@ -11,12 +11,13 @@ const ds = Datastore({
 const kind = 'Links'
 
 function addLink(link) {
+    var dater = new Date().toJSON();
     const linkKey = ds.key('Links');
     const entity = {
         key: linkKey,
         data: [
     {
-        name: 'created',
+        name: dater,
         value: link
     }
         ]
