@@ -14,6 +14,6 @@
 # [START app_yaml]
 runtime: nodejs
 env: flex
-env_variables: GOOGLE_APPLICATION_CREDENTIALS = 'browsebud-87c9d72be96b.json'
+
 
 # [END app_yaml]
