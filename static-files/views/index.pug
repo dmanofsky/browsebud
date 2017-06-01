@@ -10,7 +10,7 @@ html
 
       div(id='module0')
         div(id='module0-inner')
-          h1(class='module0-title') WE RATE WEB CONTENT FOR AGE APPROPRIATENESS.
+          h1(class='module0-title') RATE WEB CONTENT FOR AGE APPROPRIATENESS.
           h2(class='module0-sub-title') Get content ratings for your favorite sites.
           div(id='form-container')
             form(method='POST' action='/newform' name='rateUrl' id='unAuthRateForm')
@@ -22,16 +22,20 @@ html
           div(id='sign-up-block')
             a(id='sign-up-button' href='https://browsebud.appspot.com/') Sign Up For Free
             a(id='top-learn-more' href='https://browsebud.appspot.com/' class='learn-more') or Learn More #{'>'}
-      div(id='module1')
+      div(id='module1' class='module1')
         div(id='module1-inner')
           h1(class='module1-title') Making the Internet Safer
-          h2(class='module1-sub-title') An open internet is critical to free speech, but how can we ensure the quality of web content? Only Browsebud rates internet content for age appropriateness and factualness.
-          div(id='module1-images')
-            ul
-              li
+          h2(class='module1-sub-title') An open internet is critical to free speech, but how can we ensure the quality of web content when anything can be said? Only Browsebud rates internet content for age appropriateness and factualness. Browsebud strives to prevent internet censorship and promote net neutrality by holding the internet accountable through ratings.
+          div(id='module1-icons')
+            ul(class='module1-list')
+              li(class='module1-list-item')
                 h2(class='module1-caption1') Paste
-              li
+                h3(class='module1-text') Paste a link in the search box.
+              li(class='module1-list-item')
                 h2(class='module1-caption1') Rate
-              li
+                h3(class='module1-text') Hit rate to calculate its rating.
+              li(class='module1-list-item')
                 h2(class='module1-caption1') Review
+                h3(class='module1-text') Review the rating to detmine the content quality.
+
       include includes/footer.pug
