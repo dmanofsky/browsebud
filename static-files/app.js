@@ -31,12 +31,12 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.post('/newform', (req, res) => {
-  console.log('Post Success!');
+app.post('/rating', (req, res) => {
+  console.log('-------Website acquired!-------');
   console.log('Grabbed ----> ' + req.body.url);
   var LS = require('./linkSave.js');
   LS.addLink(req.body.url);
-  res.render('newform');
+  res.render('rating');
 });
 
 /*app.get('*', (req, res) => {
