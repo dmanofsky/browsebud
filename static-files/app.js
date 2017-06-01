@@ -31,19 +31,19 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.post('/newform', (req, res) => {
-  console.log('Post Success!');
+app.post('/rating', (req, res) => {
+  console.log('-------Website acquired!-------');
   console.log('Grabbed ----> ' + req.body.url);
   var LS = require('./linkSave.js');
   LS.addLink(req.body.url);
-  res.render('newform');
+  res.render('rating');
 });
 
-app.get('*', (req, res) => {
+/*app.get('*', (req, res) => {
   console.log('404 Page Not Found');
   res.send("This is not the page you are looking for!");
   // Can also replace with a 404 page not found!;
-})
+})*/
 
 
 // Start the server
