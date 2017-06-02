@@ -27,6 +27,7 @@ app.use('/static', express.static('public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
+
 app.get('/', (req, res) => {
   res.render('index');
 });
@@ -46,6 +47,11 @@ app.post('/rating', (req, res) => {
 })*/
 
 
+app.use(function (req, res, next) {
+  res.render('404error');
+  //res.status(404).send("Sorry can't find that!");
+  
+})
 // Start the server
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
