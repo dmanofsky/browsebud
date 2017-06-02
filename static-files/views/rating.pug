@@ -1,7 +1,14 @@
-doctype
+doctype html
 html
-    head
-        title= "Browse Bud - Rating the web for age appropriateness"
-    body
-      h1
-        p Website Is Not Yet Rated!
+  // include the head file
+  include includes/head.pug
+
+  body
+    div(class='stage')
+      include includes/header.pug
+
+      div(class='not-rated-block')
+        h1 Website Not Yet Rated!
+        h2 This website has not yet been rated. Please check back later.
+
+      include includes/footer.pug

@@ -31,9 +31,6 @@ font-family: 'Roboto Condensed', sans-serif;
 
 body {
   margin: 0px;
-  background: url(./macbook-table.jpeg) no-repeat center center;
-  background-position: top;
-  background-size: contain;
 }
 
 .button {
@@ -299,11 +296,17 @@ header {
 }
 
 #module0 {
+  background: url(./macbook-table.jpeg) no-repeat center center;
+  background-position: top;
+  background-size: cover;
   position: static;
   z-index: 0;
   top: 0px;
   width: 100%;
   height: auto;
+}
+
+#module0-background {
   background-color: rgba(44, 20, 117, 0.78);
 }
 
@@ -415,6 +418,13 @@ nav {
 
 .navigation {
 
+}
+
+.not-rated-block {
+  height: 400px;
+  text-align: center;
+  color: #2C1475;
+  padding: 150px 0px 150px 0px;
 }
 
 .stage {
